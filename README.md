@@ -19,12 +19,12 @@ The required packages are:
 
 Usage
 -----
-The script requires Python 3 and depends on the ffprobe and ffmpeg executables. To use the script, save it as a Python file (e.g., audio\_track\_analyzer.py) and run it from the command line with the required arguments. For example:
+The script requires Python 3 and depends on the ffprobe and ffmpeg executables. To use the script, save it as a Python file (e.g., movie\_track\_analyzer.py) and run it from the command line with the required arguments. For example:
 
 bash
 
 ```bash
-python audio_track_analyzer.py -d /path/to/your/movie/directory -ff /path/to/ffmpeg-folder
+python movie_track_analyzer.py -d /path/to/your/movie/directory -ff /path/to/ffmpeg-folder
 ```
 
 This will scan the specified directory for movie files and display information about their audio tracks in a table.
