@@ -16,7 +16,9 @@ The required packages are:
 *   tmdbv3api
 *   tqdm
 *   pycountry
-*   
+
+Usage
+-----
 The script requires Python 3 and depends on the ffprobe and ffmpeg executables. To use the script, save it as a Python file (e.g., audio\_track\_analyzer.py) and run it from the command line with the required arguments. For example:
 
 bash
