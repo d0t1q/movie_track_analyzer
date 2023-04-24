@@ -1,6 +1,22 @@
-# movie_track_analyzer
+Movie Track Analyzer
+====================
 This script scans a specified directory for movie files and analyzes their audio tracks, providing detailed information such as language, format, channels, bitrate, title, and size. It offers various filtering options to display desired results. You can also choose to delete unwanted audio tracks to save storage space.
 
+Requirements
+------------
+
+To install the dependencies, use the following command:
+
+`pip install -r requirements.txt`
+
+The required packages are:
+
+*   requests
+*   prettytable
+*   tmdbv3api
+*   tqdm
+*   pycountry
+*   
 The script requires Python 3 and depends on the ffprobe and ffmpeg executables. To use the script, save it as a Python file (e.g., audio\_track\_analyzer.py) and run it from the command line with the required arguments. For example:
 
 bash
@@ -32,3 +48,8 @@ The `-w` or `--work` flag enables the use of the `TMDB_pull_language` function i
 The `-wl` or `--wrong-language` flag is used in conjunction with the `-w` flag. When both flags are enabled, the script will display only those movie files with audio tracks in languages different from the original language of the movie as retrieved from TMDb. This can help you identify files with incorrect or additional language tracks that you may want to remove or modify.
 
 Keep in mind that to use the `-wl` flag, you must also enable the `-w` flag, as the `-wl` flag relies on the TMDb API to determine the original language of the movie.
+
+Note on size and bitrate accuracy
+---------------------------------
+
+The size and bitrate values displayed in the output table are calculated based on the metadata provided by the media files. These values might not always be accurate, as they can be affected by factors such as variable bitrates, container overhead, or incorrect metadata. While the script provides a useful overview of the audio tracks, it's important to keep this limitation in mind when making decisions based on the size and bitrate values.
