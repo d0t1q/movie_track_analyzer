@@ -3,5 +3,3 @@ prettytable
 tmdbv3api
 tqdm
 pycountry
-argparse
-fnmatch
